@@ -1,0 +1,21 @@
+{
+  "name": "mondmondxmas",
+  "version": "1.0.0",
+  "description": "santa is dead, but we can still save christmas",
+  "main": "mondmondskripto.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martindevtum/mondmondxmas.git"
+  },
+  "author": "Martin Achenbach",
+  "bugs": {
+    "url": "https://github.com/martindevtum/mondmondxmas/issues"
+  },
+  "homepage": "https://github.com/martindevtum/mondmondxmas#readme",
+  "dependencies": {
+    "nodemailer": "^6.4.16"
+  }
+}

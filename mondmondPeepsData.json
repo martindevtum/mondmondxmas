@@ -1,0 +1,22 @@
+{
+    "peopArray":[
+        {
+            "key": 0,
+            "name": "testpeep1",
+            "email": "",
+            "adress": ""
+        },
+        {
+            "key": 1,
+            "name": "testpeep2",
+            "email": "",
+            "adress": ""
+        },
+        {
+            "key": 2,
+            "name": "testpeep3",
+            "email": "",
+            "adress": ""
+        }
+    ]
+}
