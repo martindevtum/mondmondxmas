@@ -14,8 +14,22 @@ const send = (sendToMondMondPeep, electedMondMondPeep) => {
       {
           from: ADRESS,
           to: sendToMondMondPeep.email,
-          subject: `Hey ${sendToMondMondPeep.name} Your Wichtel mondmondpeep is ......`,
-          text: `Santas last will was for you to gift your mondmondpeepboiii:\n     ${electedMondMondPeep.name}.\nThis boi can be found at:\n     ${electedMondMondPeep.adress}`,
+          subject: `HoHoHoHola ${sendToMondMondPeep.name} Your MondMond-Wichtel-Partner is ......`,
+          text: 
+`Santas last will was for you to gift your MondMond-Friendo: 
+
+${electedMondMondPeep.name}.
+
+-----------------------
+
+This boi can be found at:
+
+${electedMondMondPeep.adress}
+
+-----------------------
+
+Merry Motherfucking Christmas....
+`,
       }, function(error, info){
           if (error) {
             console.log(error);
