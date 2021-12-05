@@ -16,6 +16,6 @@
   },
   "homepage": "https://github.com/martindevtum/mondmondxmas#readme",
   "dependencies": {
-    "nodemailer": "^6.4.16"
+    "nodemailer": "^6.7.2"
   }
 }

@@ -1,11 +1,16 @@
 var nodemailer = require('nodemailer');
 
-const ADRESS = '';  //insert mail adress here (gmail as of transporter settings)
+const ADRESS = '';  //insert mail adress here 
+
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  pool: true,
+  maxConnections: 1,
+  host: 'mail.gmx.net',
+  port: 587,
+  secure: false,
   auth: {
     user: ADRESS,
-    pass: '',   // insert pw here 
+    pass: 'insert_pw_here'
   }
 });
 
@@ -37,8 +42,8 @@ Merry Motherfucking Christmas....
             console.log('Email sent: ' + info.response);
           }
   });
-}
+};
 
 module.exports = {
     send,
-}
+};

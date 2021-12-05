@@ -1,9 +1,9 @@
-const {send} = require('./mailScripto');
+const { send } = require('./mailScripto');
 const ALL_PEEPS = require('./mondmondPeepsData.json').peopArray;
 
 const matchPeeps = () => {
     let matchingDone = false;
-    let matchedArr = {};
+    let matchedArr = [];
     while(!matchingDone){
         matchedArr = ALL_PEEPS.map((mondMondpeep) => {
             return {peep: mondMondpeep , matchedTo: {}};
@@ -25,11 +25,11 @@ const matchPeeps = () => {
         matchingDone = unmatched.length == 0; 
     }
     return matchedArr;
-} 
+};
 
 (() => {
     const matchedPeeps = matchPeeps();
-    matchedPeeps.map((peep)=>{
+    matchedPeeps.forEach((peep) => {
         send(peep.peep, peep.matchedTo);
     })
-})();
+}) ();
